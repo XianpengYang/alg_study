@@ -3,6 +3,7 @@ package study.alg;
 import jdk.jshell.execution.Util;
 import study.alg.niuke.AboutString;
 import study.alg.niuke.HarfNum;
+import study.alg.niuke.StepJumping;
 import study.alg.niuke.binarySearch1;
 import study.alg.Utils.Array_log;
 
@@ -17,8 +18,8 @@ public class Main {
 //        test_niuke_arraySearch();
 //        test_niuke_search();
 //        test_niuke_AboutString();
-        test_niuke_HarfNum();
-
+//        test_niuke_HarfNum();
+        test_niuke_step();
     }
 
     public static void test_niuke_arraySearch() {
@@ -50,5 +51,22 @@ public class Main {
         HarfNum harfNum = new HarfNum();
         int re = harfNum.MoreThanHalfNum_Solution(numbers);
         System.out.println(re);
+    }
+
+    public static void test_niuke_step() {
+        int number = 40;
+        StepJumping s = new StepJumping();
+        System.out.println(s.jumpFloor(number));
+
+
+        int A[] = {1, 2, 3, 0, 0, 0};
+        int B[] = {4, 5, 6};
+        s.merge(A, 3, B, 3);
+
+        int C[] = {18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1};
+//        int C[] = {4,4,4};
+        s.candy(C);
+
+
     }
 }
