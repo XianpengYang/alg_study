@@ -72,13 +72,13 @@ public class StepJumping {
             }
 
         }
-//        for (int i = num - 2; i >= 0; i--) {
-//            if (candy.get(i) <= candy.get(i + 1) && arr[i] > arr[i + 1]) {
-//                int max = candy.get(i + 1) + 1;
-//                candy.set(i, max);
-//            }
-//
-//        }
+        for (int i = num - 2; i >= 0; i--) {
+            if (candy.get(i) <= candy.get(i + 1) && arr[i] > arr[i + 1]) {
+                int max = candy.get(i + 1) + 1;
+                candy.set(i, max);
+            }
+
+        }
 
 
         int sum = 0;
