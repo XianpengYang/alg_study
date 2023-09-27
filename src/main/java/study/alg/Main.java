@@ -1,6 +1,7 @@
 package study.alg;
 
 import jdk.jshell.execution.Util;
+import study.alg.leetcode.Solution;
 import study.alg.niuke.AboutString;
 import study.alg.niuke.HarfNum;
 import study.alg.niuke.StepJumping;
@@ -19,7 +20,8 @@ public class Main {
 //        test_niuke_search();
 //        test_niuke_AboutString();
 //        test_niuke_HarfNum();
-        test_niuke_step();
+//        test_niuke_step();
+        test_leetcode();
     }
 
     public static void test_niuke_arraySearch() {
@@ -63,10 +65,18 @@ public class Main {
         int B[] = {4, 5, 6};
         s.merge(A, 3, B, 3);
 
-        int C[] = {6,5,4,3,2,1};
+        int C[] = {6, 5, 4, 3, 2, 1};
 //        int C[] = {4,4,4};
         s.candy(C);
 
+
+    }
+
+    public static void test_leetcode() {
+        Solution s = new Solution();
+        int x = 1534236469;
+        int s1 = s.reverse(x);
+        System.out.println(s1);
 
     }
 }
